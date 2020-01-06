@@ -182,17 +182,19 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
-// 1. What is "this" when joe.scope() is invoked?
+// 1. What is "this" when joe.scope() is invoked? 
+// name:"Joe", age:"Schmoe", hometown:"100"
 //
 // 2. What is "this" when joe.scopeArrow() is invoked?
+//Breaks out everthing within the window
 //
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// This is different when the arrow function is used because when using the arrow function, the scope gets bubbled up to the window object rather than being used in the scope of the curly braces. Arrow funcitons do not work when trying to use 'this' notation.
